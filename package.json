@@ -1,0 +1,17 @@
+{
+  "name": "lasles-vpn",
+  "version": "1.0.0",
+  "description": "This is tailwind project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": ["Vpn project"],
+  "author": "Shamim",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}

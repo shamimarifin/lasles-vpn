@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laslest - Agency Website</title>
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS Link -->
+    <link rel="stylesheet" href="./src/output.css" />
+
+  </head>
+  <body>
+    <!-- Header Section Start -->
+     <header>
+        <nav class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between ">
+            <!-- Logo -->
+             <a href="#">
+                <div class="text-2xl font-bold flex items-center gap-2">
+                <img src="./images/logo.png" alt="LaslesVPN Logo" class="h-8">
+                <span class="text-heading-text">LaslesVPN</span>
+             </div>
+             </a>
+
+             <!-- Menu Item -->
+              <ul class="hidden md:flex space-x-8">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#subscribe">Help</a></li>
+              </ul>
+
+              <!-- Auth Button -->
+               <div class="space-x-4">
+                    <button class="text-gray-600 hover:text-primary hidden sm:inline-flex">Sign In</button>
+
+                    <button class="bg-primary text-white hover:bg-red-600 px-4 py-2 rounded-full cursor-pointer">Sign Up</button>
+               </div>
+        </nav>
+     </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section -->
+     <section class="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12">
+        <!-- Left Section -->
+         <div class="md:w-1/2 mb-8 md:mb-0 space-y-8">
+            <h1 class="text-4xl font-semibold md:leading-20 leading-12 lg:text-6xl md:text-5xl">Want anything to be <br class="lg:block hidden"> easy with <span class="font-bold">LaslesVPN</span> .</h1>
+            <p class="text-primary-text text-lg leading-relaxed max-w-xl">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
+
+            <button class="bg-primary text-white px-12 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-lg font-medium cursor-pointer">Get Started</button>
+
+         </div>
+        <!-- Right Section-->
+         <div class="md:w-1/2">
+          <img src="./images/banner.png" alt="" class="w-full">
+         </div>
+     </section>
+
+     <!-- Statistics Section -->
+      <section class="section-container">
+       <div class="bg-white shadow-lg p-8">
+          <div class="flex flex-col md:flex-row justify-around items-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <!-- User Stats -->
+             <div class="flex item-center gap-6 px-12 py-6 md:py-0">
+              <div class="bg-secondary/65 p-5 rounded-full">
+                <img src="./images/user.png" alt="user image">
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold text-gray-900">90+</h3>
+                <p class="text-primary-text">Users</p>
+              </div>
+             </div>
+            <!-- Locations Stats -->
+             <div>
+              <div>
+                <p>Location</p>
+              </div>
+             </div>
+            <!-- Servers Stats -->
+             <div>
+              <p>Server</p>
+             </div>
+          </div>
+       </div>
+      </section>
+  </body>
+</html>
