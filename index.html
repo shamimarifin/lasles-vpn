@@ -12,6 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" href="./src/output.css" />
   </head>
@@ -193,15 +202,245 @@
         </div>
 
         <!-- Pricing Card Container  -->
-         <div>
+        <div class="grid md:grid-cols-3 grid-col-1 md:w-6xl mx-auto gap-9">
           <!-- Free Plan -->
-           <div>
-              <img src="./images/box.png" alt="">
-              <h2></h2>
-           </div>
-         </div>
+          <div
+            class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-105"
+          >
+            <img src="./images/box.png" alt="gift box" class="w-32" />
+            <h3 class="text-2xl font-semibold my-8">Free Plan</h3>
+
+            <!-- Feature List -->
+            <ul class="space-y-4 mb-8 grow">
+              <li class="flex items-center gap-2">
+                <img src="./images/right-check.png" alt="" />
+                <span>Unlimited Bandwitch</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Encrypted Connection</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>No Traffic Logs</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Works on All Devices</span>
+              </li>
+            </ul>
+
+            <!-- Price Button -->
+            <div class="space-y-4 text-center">
+              <h3 class="text-2xl font-semibold">Free</h3>
+              <button
+                class="border-2 border-primary px-16 py-2 rounded-full hover:bg-primary hover:shadow-xl hover:text-white transition duration-300"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Standard Plan -->
+          <div
+            class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-105"
+          >
+            <img src="./images/box.png" alt="gift box" class="w-32" />
+            <h3 class="text-2xl font-semibold my-8">Standard Plan</h3>
+
+            <!-- Feature List -->
+            <ul class="space-y-4 mb-8 grow">
+              <li class="flex items-center gap-2">
+                <img src="./images/right-check.png" alt="" />
+                <span>Unlimited Bandwitch</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Encrypted Connection</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Yes Traffic Logs</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Works on All Devices</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Connect Anyware</span>
+              </li>
+            </ul>
+
+            <!-- Price Button -->
+            <div class="space-y-4 text-center">
+              <h3 class="text-2xl font-semibold">
+                $9 / <span class="font-normal">mo</span>
+              </h3>
+              <button
+                class="border-2 border-primary px-16 py-2 rounded-full hover:bg-primary hover:shadow-xl hover:text-white transition duration-300"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div
+            class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-105"
+          >
+            <img src="./images/box.png" alt="gift box" class="w-32" />
+            <h3 class="text-2xl font-semibold my-8">Standard Plan</h3>
+
+            <!-- Feature List -->
+            <ul class="space-y-4 mb-8 grow">
+              <li class="flex items-center gap-2">
+                <img src="./images/right-check.png" alt="" />
+                <span>Unlimited Bandwitch</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Encrypted Connection</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Yes Traffic Logs</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Works on All Devices</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Connect Anyware</span>
+              </li>
+
+              <li class="flex items-center gap-4">
+                <img src="./images/right-check.png" alt="" />
+                <span>Get New Features</span>
+              </li>
+            </ul>
+
+            <!-- Price Button -->
+            <div class="space-y-4 text-center">
+              <h3 class="text-2xl font-semibold">
+                $12 / <span class="font-normal">mo</span>
+              </h3>
+              <button
+                class="border-2 border-primary px-16 py-2 rounded-full hover:bg-primary hover:shadow-xl hover:text-white transition duration-300"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Pricing Section End -->
+
+    <!-- Global Network Section Start -->
+    <section class="section-container">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-1/3 mx-auto">
+          Huge Global Network of Fast VPN
+        </h2>
+        <p class="text-primary-text">
+          See LaslesVPN everywhere to make it easier for you when you move
+          <br />
+          locations.
+        </p>
+      </div>
+
+      <!-- Global Network -->
+      <div class="mb-2">
+        <img src="./images/map.png" alt="" class="w-full" />
+      </div>
+
+      <!-- Sponsores Logo -->
+      <div class="flex flex-wrap justify-between gap-12 py-24 opacity-65">
+        <img
+          src="./images/netflix.png"
+          alt=""
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="./images/reddit.png"
+          alt=""
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="./images/amazon.png"
+          alt=""
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="./images/discord.png"
+          alt=""
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+        <img
+          src="./images/spotify.png"
+          alt=""
+          class="h-12 grayscale hover:grayscale-0 transition duration-300"
+        />
+      </div>
+    </section>
+    <!-- Global Network Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section class="section-container">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-1/3 mx-auto">
+          Trusted by Thousands of Happy Customer
+        </h2>
+        <p class="text-primary-text">
+          These are the stories of our customers who have joined us with great
+          <br />
+          pleasure when using this crazy feature.
+        </p>
+      </div>
+
+      <!-- Testimonial Slide -->
+       <!-- Slider main container -->
+      <div class="swiper testimonialSwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+        </div>
+       
+        <!-- Navigation Controls -->
+         <div class="flex justify-between items-center mt-12">
+          <!-- Pagination Dots -->
+           <div class="swiper-pagination"></div>
+           <!-- Navigaton Arrows -->
+            <div class="flex sm:!flex md:!flex lg:!flex xl:!flex">
+              <div class="swiper-button-prev !static !w-[60px] !h-[60px] flex item-center justify-center rounded-full border-2 border-primary text-primary hover:bg-primary hover:!text-[#ffffff]">
+                <i class="fa-solid fa-arrow-left h-6 w-6"></i>
+              </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+
+    <!--------- JS link Area ---------->
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main Js File -->
+     <script src="./js/scripts.js"></script>
   </body>
 </html>
