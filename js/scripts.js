@@ -116,3 +116,7 @@ function generateTestimonials() {
 
 // Call the function when the document is loaded
 document.addEventListener('DOMContentLoaded', generateTestimonials);
+
+
+// Animation JS
+    AOS.init();

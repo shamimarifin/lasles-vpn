@@ -14,19 +14,25 @@
     />
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- AOS Animation -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
+  <body class="font-primary">
     <!-- Header Section Start -->
-    <header>
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <nav
         class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between"
       >
@@ -40,11 +46,11 @@
 
         <!-- Menu Item -->
         <ul class="hidden md:flex space-x-8">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#subscribe">Help</a></li>
+          <li><a href="#home" class="text-gray-600 hover:text-primary">About</a></li>
+          <li><a href="#features" class="text-gray-600 hover:text-primary">Features</a></li>
+          <li><a href="#pricing" class="text-gray-600 hover:text-primary">Pricing</a></li>
+          <li><a href="#testimonials" class="text-gray-600 hover:text-primary">Testimonials</a></li>
+          <li><a href="#subscribers" class="text-gray-600 hover:text-primary">Help</a></li>
         </ul>
 
         <!-- Auth Button -->
@@ -66,11 +72,11 @@
     <!-- Header Section End -->
 
     <!-- Hero Section -->
-    <section
+    <section id="home"
       class="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12"
     >
       <!-- Left Section -->
-      <div class="md:w-1/2 mb-8 md:mb-0 space-y-8">
+      <div class="md:w-1/2 mb-8 md:mb-0 space-y-8" data-aos="fade-right" >
         <h1
           class="text-4xl font-semibold md:leading-20 leading-12 lg:text-6xl md:text-5xl"
         >
@@ -82,20 +88,16 @@
           discover interesting features from us.
         </p>
 
-        <button
-          class="bg-primary text-white px-12 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-lg font-medium cursor-pointer"
-        >
-          Get Started
-        </button>
+        <button class="btn">Get Started</button>
       </div>
       <!-- Right Section-->
-      <div class="md:w-1/2">
+      <div class="md:w-1/2" data-aos="fade-left">
         <img src="./images/banner.png" alt="" class="w-full" />
       </div>
     </section>
 
     <!-- Statistics Section -->
-    <section class="section-container">
+    <section class="section-container" data-aos="fade-up">
       <div class="bg-white shadow-lg p-8">
         <div
           class="flex flex-col md:flex-row justify-around items-center divide-y md:divide-y-0 md:divide-x divide-gray-200"
@@ -135,16 +137,16 @@
     </section>
 
     <!-- Features Section Start -->
-    <section class="section-container">
+    <section id="features" class="section-container" >
       <div
         class="flex flex-col items-center md:flex-row space-y-6 md:space-y-0"
       >
         <!-- Left Content -->
-        <div class="md:w-1/2">
+        <div class="md:w-1/2" data-aos="fade-right" >
           <img src="./images/features.png" alt="" />
         </div>
         <!-- Right Content -->
-        <div class="md:w-1/2 space-y-8">
+        <div class="md:w-1/2 space-y-8" data-aos="fade-left" >
           <h2 class="text-heading-text text-4xl font-bold leading-tight">
             We Provide Many <br />
             Features You Can Use
@@ -187,7 +189,7 @@
     <!-- Features Section End -->
 
     <!-- Pricing Section Start -->
-    <section class="bg-section-background">
+    <section id="pricing" class="bg-section-background">
       <div class="section-container">
         <!-- Section Header -->
         <div class="text-center mb-16">
@@ -202,7 +204,7 @@
         </div>
 
         <!-- Pricing Card Container  -->
-        <div class="grid md:grid-cols-3 grid-col-1 md:w-6xl mx-auto gap-9">
+        <div class="grid md:grid-cols-3 grid-col-1 md:w-6xl mx-auto gap-9" data-aos="fade-up">
           <!-- Free Plan -->
           <div
             class="bg-white p-8 rounded-2xl border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-105"
@@ -400,7 +402,7 @@
     <!-- Global Network Section End -->
 
     <!-- Testimonial Section Start -->
-    <section class="section-container">
+    <section id="testimonials" class="section-container">
       <!-- Section Header -->
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-1/3 mx-auto">
@@ -414,33 +416,153 @@
       </div>
 
       <!-- Testimonial Slide -->
-       <!-- Slider main container -->
+      <!-- Slider main container -->
       <div class="swiper testimonialSwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
         </div>
-       
+
         <!-- Navigation Controls -->
-         <div class="flex justify-between items-center mt-12">
+        <div
+          class="flex justify-between items-center mt-12 md:w-4/5 md:mx-auto"
+        >
           <!-- Pagination Dots -->
-           <div class="swiper-pagination"></div>
-           <!-- Navigaton Arrows -->
-            <div class="flex sm:!flex md:!flex lg:!flex xl:!flex">
-              <div class="swiper-button-prev !static !w-[60px] !h-[60px] flex item-center justify-center rounded-full border-2 border-primary text-primary hover:bg-primary hover:!text-[#ffffff]">
-                <i class="fa-solid fa-arrow-left h-6 w-6"></i>
-              </div>
+          <div class="swiper-pagination !relative !bottom-0 !w-auto"></div>
+          <!-- Navigaton Arrows -->
+          <div class="flex sm:!flex md:!flex lg:!flex xl:!flex gap-4">
+            <div
+              class="swiper-button-prev !static !w-[60px] !h-[60px] flex item-center justify-center rounded-full border-2 border-primary !text-primary hover:bg-primary hover:!text-[#ffffff]"
+            >
+              <i class="fa-solid fa-arrow-left h-6 w-6"></i>
             </div>
-         </div>
+
+            <div
+              class="swiper-button-next !static !w-[60px] !h-[60px] flex item-center justify-center rounded-full border-2 border-primary !text-primary hover:bg-primary hover:!text-[#ffffff]"
+            >
+              <i class="fa-solid fa-arrow-right h-6 w-6"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Testimonial Section End -->
 
+    <!-- Subscribe Section Start -->
+    <section id="subscribers" class="section-container" data-aos="fade-up">
+      <div
+        class="bg-white rounded-xl shadow-lg p-8 md:p-12 lg:p-16 hover:shadow-2xl transition-all duration-500 md:w-5/6 md:mx-auto"
+      >
+        <div
+          class="flex flex-col md:flex-row text-center md:text-left justify-between items-center gap-8"
+        >
+          <!-- Left Content -->
+          <div>
+            <h2
+              class="text-2xl md:text-3xl lg:text-4xl text-primary-text font-bold mb-2"
+            >
+              Subscribe Now for <br class="md:block sm:hidden" />
+              Get Special Features!
+            </h2>
+            <p>Let's subscribe with us and find the fun.</p>
+          </div>
+          <!-- Right Content -->
+          <div>
+            <button class="btn">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-[#F8F8F8]">
+      <div class="section-container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <!-- Footer Logo -->
+          <div class="lg:col-span-1 space-y-7">
+            <div class="flex items-center gap-2 mb-2">
+              <img src="./images/logo.png" alt="" class="h-8" />
+              <span class="text-xl font-bold">LaslesVPN</span>
+            </div>
+            <p class="text-primary-text mb-2">
+              LaslesVPN is a private virtual network that has unique features
+              and has high security.
+            </p>
+
+            <!-- Footer Social Icon -->
+            <div class="flex items-center gap-4 mt-3">
+              <a
+                href="#"
+                class="bg-white shadow-lg w-8 h-8 inline-flex justify-center items-center rounded-full hover:shadow-2xl text-primary hover:text-heading-text"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white shadow-lg w-8 h-8 inline-flex justify-center items-center rounded-full hover:shadow-2xl text-primary hover:text-heading-text"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white shadow-lg w-8 h-8 inline-flex justify-center items-center rounded-full hover:shadow-2xl text-primary hover:text-heading-text"
+              >
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </div>
+            <!-- Copyright -->
+            <div>
+              <p class="text-primary-text">©2020LaslesVPN</p>
+            </div>
+          </div>
+
+          <!-- Product Link -->
+          <div>
+            <h3 class="font-medium text-lg mb-2">Product</h3>
+            <ul class="space-y-4 text-primary-text">
+              <li><a href="#" class="hover:text-primary">Download</a></li>
+              <li><a href="#" class="hover:text-primary">Pricing</a></li>
+              <li><a href="#" class="hover:text-primary">Locations</a></li>
+              <li><a href="#" class="hover:text-primary">Server</a></li>
+              <li><a href="#" class="hover:text-primary">Countries</a></li>
+              <li><a href="#" class="hover:text-primary">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Engage Link -->
+          <div>
+            <h3 class="font-medium text-lg mb-2">Engage</h3>
+            <ul class="space-y-4 text-primary-text">
+              <li><a href="#" class="hover:text-primary">LaslesVPN?</a></li>
+              <li><a href="#" class="hover:text-primary">FAQ</a></li>
+              <li><a href="#" class="hover:text-primary">Tutorials</a></li>
+              <li><a href="#" class="hover:text-primary">About Us</a></li>
+              <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-primary">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <!-- Earn Money -->
+           <div>
+            <h3 class="font-medium text-lg mb-2">Engage</h3>
+            <ul class="space-y-4 text-primary-text">
+              <li><a href="#" class="hover:text-primary">Affliate</a></li>
+              <li><a href="#" class="hover:text-primary">Become Partner</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
 
     <!--------- JS link Area ---------->
     <!-- Swiper JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Main Js File -->
-     <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

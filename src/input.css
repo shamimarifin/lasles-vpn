@@ -15,4 +15,33 @@
     .section-container{
         @apply max-w-[1440px] container mx-auto px-4 py-16;
     }
+
+    .btn{
+        @apply bg-primary text-white px-12 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-lg font-medium cursor-pointer
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background-color: #DDE0E4;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--color-primary);
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: ''!important;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '' !important;
 }
